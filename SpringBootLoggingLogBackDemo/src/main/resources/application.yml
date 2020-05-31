@@ -4,4 +4,5 @@ logging:
   level:
     root: error
     org.springframework.web: trace
-  
+server:
+  port: 8090

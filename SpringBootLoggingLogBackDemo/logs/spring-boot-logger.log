@@ -14,3 +14,108 @@
 2020-05-31 16:07:56,799 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
 2020-05-31 16:07:56,800 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 2020-05-31 16:07:56,808 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-31 16:16:46,957 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-31 16:16:46,962 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1295 ms
+2020-05-31 16:16:47,175 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-31 16:16:47,233 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	c.e.c.LoggingController:
+	{ /}: getLoggingController()
+2020-05-31 16:16:47,238 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2020-05-31 16:16:47,243 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 3 mappings in 'requestMappingHandlerMapping'
+2020-05-31 16:16:47,260 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2020-05-31 16:16:47,278 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020-05-31 16:16:47,278 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-31 16:16:47,278 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-31 16:16:47,287 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-31 16:16:47,438 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-05-31 16:20:06,507 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-31 16:20:06,510 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 975 ms
+2020-05-31 16:20:06,697 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-31 16:20:06,738 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	c.e.c.LoggingController:
+	{ /}: getLoggingController()
+2020-05-31 16:20:06,742 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2020-05-31 16:20:06,746 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 3 mappings in 'requestMappingHandlerMapping'
+2020-05-31 16:20:06,772 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2020-05-31 16:20:06,785 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020-05-31 16:20:06,786 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-31 16:20:06,786 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-31 16:20:06,795 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-31 16:20:06,909 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2020-05-31 16:21:01,504 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-31 16:21:01,507 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 978 ms
+2020-05-31 16:21:01,692 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-31 16:21:01,730 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	c.e.c.LoggingController:
+	{ /}: getLoggingController()
+2020-05-31 16:21:01,734 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2020-05-31 16:21:01,738 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 3 mappings in 'requestMappingHandlerMapping'
+2020-05-31 16:21:01,750 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2020-05-31 16:21:01,770 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020-05-31 16:21:01,771 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-31 16:21:01,778 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-31 16:21:01,802 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-31 16:21:08,433 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-05-31 16:21:08,434 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@12467d61
+2020-05-31 16:21:08,436 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2020-05-31 16:21:08,438 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2020-05-31 16:21:08,440 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2020-05-31 16:21:08,448 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2020-05-31 16:21:08,449 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-05-31 16:21:08,450 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed initialization in 16 ms
+2020-05-31 16:21:08,464 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8090-exec-1] GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2020-05-31 16:21:08,469 TRACE org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8090-exec-1] Mapped to com.example.controller.LoggingController#getLoggingController()
+2020-05-31 16:21:08,483 TRACE org.springframework.web.method.support.InvocableHandlerMethod [http-nio-8090-exec-1] Arguments: []
+2020-05-31 16:21:08,483 ERROR com.example.controller.LoggingController [http-nio-8090-exec-1] An ERROR Message
+2020-05-31 16:21:08,504 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8090-exec-1] Using 'text/html', given [text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-05-31 16:21:08,506 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8090-exec-1] Writing ["In Logging controller"]
+2020-05-31 16:21:08,518 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-1] No view rendering, null ModelAndView returned.
+2020-05-31 16:21:08,519 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed 200 OK, headers={masked}
+2020-05-31 16:21:08,548 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8090-exec-2] GET "/favicon.ico", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2020-05-31 16:21:08,552 TRACE org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8090-exec-2] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]] and 3 interceptors
+2020-05-31 16:21:08,554 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8090-exec-2] Resource not found
+2020-05-31 16:21:08,555 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] No view rendering, null ModelAndView returned.
+2020-05-31 16:21:08,555 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-2] Completed 404 NOT_FOUND, headers={masked}
+2020-05-31 16:21:08,561 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8090-exec-2] "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2020-05-31 16:21:08,563 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [http-nio-8090-exec-2] 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+2020-05-31 16:21:08,563 TRACE org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8090-exec-2] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-05-31 16:21:08,567 TRACE org.springframework.web.method.support.InvocableHandlerMethod [http-nio-8090-exec-2] Arguments: [org.apache.catalina.core.ApplicationHttpRequest@41398919]
+2020-05-31 16:21:08,578 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8090-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-05-31 16:21:08,578 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8090-exec-2] Writing [{timestamp=Sun May 31 16:21:08 IST 2020, status=404, error=Not Found, message=No message available, path=/favicon.ico}]
+2020-05-31 16:21:08,622 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8090-exec-2] No view rendering, null ModelAndView returned.
+2020-05-31 16:21:08,623 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-2] Exiting from "ERROR" dispatch, status 404, headers={masked}
