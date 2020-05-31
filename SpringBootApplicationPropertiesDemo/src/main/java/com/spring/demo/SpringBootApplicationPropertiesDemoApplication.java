@@ -34,3 +34,5 @@ public class SpringBootApplicationPropertiesDemoApplication {
 //TO activate differernt profile sample Dev properties file
 //use below command on generated jar
 // java -jar JARNAME --spring.profiles.active=dev
+//To activate PROD profile use below command
+//java -jar JARNAME --spring.profiles.active=prod
