@@ -5,6 +5,7 @@ spring:
       name: Simple Application name
 
 #---
+#spring:
 #  profiles: dev
 #   application:
  #     name: demoservice
