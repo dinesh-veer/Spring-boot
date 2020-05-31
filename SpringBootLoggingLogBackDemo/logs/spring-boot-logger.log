@@ -1,0 +1,16 @@
+2020-05-31 16:07:56,514 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-31 16:07:56,517 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 964 ms
+2020-05-31 16:07:56,714 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-31 16:07:56,752 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	c.e.c.LoggingController:
+	{ /}: getLoggingController()
+2020-05-31 16:07:56,757 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2020-05-31 16:07:56,760 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 3 mappings in 'requestMappingHandlerMapping'
+2020-05-31 16:07:56,769 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [restartedMain] Detected 0 mappings in 'beanNameHandlerMapping'
+2020-05-31 16:07:56,799 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2020-05-31 16:07:56,799 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-05-31 16:07:56,800 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-31 16:07:56,808 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice

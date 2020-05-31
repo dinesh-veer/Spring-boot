@@ -1,0 +1,7 @@
+logging:
+  file:
+    path:  /Users/dineshveer/Documents/Workspace
+  level:
+    root: error
+    org.springframework.web: trace
+  
