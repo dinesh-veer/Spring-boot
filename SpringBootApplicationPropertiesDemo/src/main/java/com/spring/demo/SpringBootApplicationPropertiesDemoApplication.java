@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class SpringBootApplicationPropertiesDemoApplication {
-
-	@Value("${name.properties}")
+	// Default value assigned if no value found
+	@Value("${name.properties:Veer}")
 	public String name;
 	
 	public static void main(String[] args) {
