@@ -1,0 +1,37 @@
+2020-05-31 16:30:15,908 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SpringBootLoggingLog4j2DemoApplication on Dineshs-MacBook-Air.local with PID 22475 (/Users/dineshveer/Documents/Workspace/Spring-boot/SpringBootLoggingLog4j2Demo/target/classes started by dineshveer in /Users/dineshveer/Documents/Workspace/Spring-boot/SpringBootLoggingLog4j2Demo)
+2020-05-31 16:30:15,916 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-05-31 16:30:15,918 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-05-31 16:30:15,959 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-05-31 16:30:15,959 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-05-31 16:30:16,897 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-05-31 16:30:16,910 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-31 16:30:16,911 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-05-31 16:30:16,911 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-05-31 16:30:16,969 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-05-31 16:30:16,969 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1009 ms
+2020-05-31 16:30:17,147 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-31 16:30:17,319 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2020-05-31 16:30:17,330 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-05-31 16:30:17,352 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2020-05-31 16:30:17,353 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-31 16:30:17,356 INFO o.a.j.l.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-8080"]
+2020-05-31 16:30:17,356 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-05-31 16:30:17,361 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-8080"]
+2020-05-31 16:30:17,362 INFO o.a.j.l.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-8080"]
+2020-05-31 16:30:17,369 INFO o.s.b.a.l.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-05-31 16:30:17,374 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
