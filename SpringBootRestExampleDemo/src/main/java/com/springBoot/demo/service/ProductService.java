@@ -41,4 +41,12 @@ public class ProductService {
 			return 0;
 	}
 
+	public boolean deleteProduct(Integer id) {
+		if((productMap.containsKey(id))) {
+			productMap.remove(id);
+			return true;
+		}
+		return false;
+	}
+
 }

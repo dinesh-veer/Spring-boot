@@ -3,6 +3,8 @@ package com.springBoot.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -41,8 +43,8 @@ public class ProductController {
 	
 	
 	
-	@PutMapping("/update/{id}")
-	public ResponseEntity<Object> updateProduct(@RequestBody Product product){
+	@PutMapping({"/update","/update/{id}"})
+	public ResponseEntity<Object> updateProduct(@RequestBody Product product, @PathVariable(required=false) Integer id){
 		if(productService.updateProduct(product)==1)
 			return new ResponseEntity<Object>("Product Updated successfully", HttpStatus.OK);
 		else 
@@ -50,6 +52,13 @@ public class ProductController {
 		
 	}
 	
-	
+	@DeleteMapping("/product/{id}")
+	public ResponseEntity<Object> deleteProduct(@PathVariable Integer id){
+		if(productService.deleteProduct(id))
+			
+			return new ResponseEntity<Object>("Product deleted successfully ",HttpStatus.ACCEPTED);
+		else 
+			return new ResponseEntity<Object>("Product not found ",HttpStatus.OK);
+	}
 	
 }
