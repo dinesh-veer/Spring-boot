@@ -263,3 +263,5 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2020-05-31 16:33:44,350 INFO c.e.d.LogginController [http-nio-8081-exec-1] An INFO Message
 2020-05-31 16:33:44,350 WARN c.e.d.LogginController [http-nio-8081-exec-1] A WARN Message
 2020-05-31 16:33:44,351 ERROR c.e.d.LogginController [http-nio-8081-exec-1] An ERROR Message
+2020-05-31 16:36:31,530 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(2)-127.0.0.1] Application shutdown requested.
+2020-05-31 16:36:31,550 INFO o.s.s.c.ExecutorConfigurationSupport [RMI TCP Connection(2)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
