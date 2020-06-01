@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,4 +38,18 @@ public class ProductController {
 		productService.addProduct(product);
 		return new ResponseEntity<Object>("Product added successfully" , HttpStatus.CREATED);
 	}
+	
+	
+	
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Object> updateProduct(@RequestBody Product product){
+		if(productService.updateProduct(product)==1)
+			return new ResponseEntity<Object>("Product Updated successfully", HttpStatus.OK);
+		else 
+			return new ResponseEntity<Object>("Product Not found", HttpStatus.INTERNAL_SERVER_ERROR);
+		
+	}
+	
+	
+	
 }

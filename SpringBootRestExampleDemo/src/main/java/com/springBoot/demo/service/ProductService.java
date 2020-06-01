@@ -9,27 +9,36 @@ import com.springBoot.demo.model.Product;
 
 @Service
 public class ProductService {
-public static Map<Integer, Product> productMap= new HashMap<>();
-	
+	public static Map<Integer, Product> productMap = new HashMap<>();
+
 	static {
-		Product productOne= new Product();
+		Product productOne = new Product();
 		productOne.setId(1);
 		productOne.setName("MEAL");
 		productMap.put(productOne.getId(), productOne);
-		
-		Product producttwo= new Product();
+
+		Product producttwo = new Product();
 		producttwo.setId(2);
 		producttwo.setName("TEST");
 		productMap.put(producttwo.getId(), producttwo);
-		
+
 	}
-	public Collection<Product> getAllProducts(){
+
+	public Collection<Product> getAllProducts() {
 		return productMap.values();
 	}
+
 	public Product addProduct(Product product) {
 		return productMap.put(product.getId(), product);
-		
+
 	}
-	
-	
+
+	public int updateProduct(Product product) {
+		if (productMap.containsKey(product.getId())) {
+			productMap.put(product.getId(), product);
+			return 1;
+		} else
+			return 0;
+	}
+
 }
