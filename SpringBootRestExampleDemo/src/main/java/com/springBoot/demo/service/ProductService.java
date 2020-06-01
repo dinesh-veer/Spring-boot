@@ -26,6 +26,10 @@ public static Map<Integer, Product> productMap= new HashMap<>();
 	public Collection<Product> getAllProducts(){
 		return productMap.values();
 	}
+	public Product addProduct(Product product) {
+		return productMap.put(product.getId(), product);
+		
+	}
 	
 	
 }
