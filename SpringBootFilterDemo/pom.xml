@@ -8,11 +8,11 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.spring</groupId>
-	<artifactId>SimpleSpringBootDemo</artifactId>
+	<groupId>com.springBoot</groupId>
+	<artifactId>SpringBootFilterDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SimpleSpringBootDemo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>SpringBootFilterDemo</name>
+	<description>Demo project for Spring Boot Rest Example</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -25,6 +25,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
