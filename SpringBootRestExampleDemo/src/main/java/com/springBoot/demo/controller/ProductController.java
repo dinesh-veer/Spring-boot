@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.springBoot.demo.exception.ProductNotFoundException;
 import com.springBoot.demo.model.Product;
 import com.springBoot.demo.service.ProductService;
 
@@ -48,7 +49,7 @@ public class ProductController {
 		if(productService.updateProduct(product)==1)
 			return new ResponseEntity<Object>("Product Updated successfully", HttpStatus.OK);
 		else 
-			return new ResponseEntity<Object>("Product Not found", HttpStatus.INTERNAL_SERVER_ERROR);
+			throw new ProductNotFoundException();
 		
 	}
 	
@@ -58,7 +59,7 @@ public class ProductController {
 			
 			return new ResponseEntity<Object>("Product deleted successfully ",HttpStatus.ACCEPTED);
 		else 
-			return new ResponseEntity<Object>("Product not found ",HttpStatus.OK);
+			throw new ProductNotFoundException();
 	}
 	
 }
