@@ -10,6 +10,16 @@ public class WelcomeController {
 	public String welcomePage() {
 		return "index";
 	}
+	
+	@RequestMapping("/view-products")
+	public String viewproducts() {
+		return "view-products";
+	}
+	
+	@RequestMapping("/add-product")
+	public String addProduct() {
+		return "add-product";
+	}
 }
 /**
  * 

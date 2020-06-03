@@ -3,6 +3,7 @@ package com.springBoot.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +23,7 @@ public class ProductController {
 	ProductService productService;
 	
 	@RequestMapping(value="/products")
+	@CrossOrigin(origins = "http://localhost:8081")
 	public ResponseEntity<Object> getProduts(){
 		return new ResponseEntity<>(productService.getAllProducts(),HttpStatus.OK);
 	}
@@ -37,6 +39,7 @@ public class ProductController {
 	 * @return
 	 */
 	@PostMapping(value="/add")
+	@CrossOrigin(origins = "http://localhost:8081")
 	public ResponseEntity<Object> createProduct(@RequestBody Product product){
 		productService.addProduct(product);
 		return new ResponseEntity<Object>("Product added successfully" , HttpStatus.CREATED);
