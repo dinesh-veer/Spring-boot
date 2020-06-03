@@ -7,7 +7,9 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -39,5 +41,17 @@ public class ProductRestTemplateController {
 		HttpEntity<Product> entity = new HttpEntity<Product>(product, headers);
 		
 		return restTemplate.exchange("http://localhost:8080/add", HttpMethod.POST,entity, String.class).getBody();
+	}
+	
+	@PutMapping(value= {"/template/update","/template/update/{id}"})
+	public String updateProduct(@RequestBody Product product , @PathVariable(required=false) Integer id) {
+		HttpHeaders headers = new HttpHeaders();
+		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+		HttpEntity<Product> entity = new HttpEntity<>(product,headers);
+		if(id!=null)
+			return restTemplate.exchange("http://localhost:8080/update/"+id, HttpMethod.PUT,entity,String.class).getBody();
+		else
+			return restTemplate.exchange("http://localhost:8080/update/", HttpMethod.PUT,entity,String.class).getBody();
+		
 	}
 }
