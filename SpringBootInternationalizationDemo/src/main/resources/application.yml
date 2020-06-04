@@ -1,0 +1,10 @@
+server:
+   port: 11111
+   ssl:
+      key-store: keystore.p12
+      key-store-password: dinesh
+      keyStoreType: PKCS12
+      keyAlias: tomcat
+#added keystore password is dinesh to enable https
+#to generate keystore use below command:
+#keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
