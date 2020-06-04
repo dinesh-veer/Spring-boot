@@ -9,3 +9,5 @@ zuul:
    products:
       path: /api/demo/**
       url: http://localhost:8080/
+ #to run this start SpringBootRestExampleDemo project 
+ #hit url like localhost:8111/api/demo/products
